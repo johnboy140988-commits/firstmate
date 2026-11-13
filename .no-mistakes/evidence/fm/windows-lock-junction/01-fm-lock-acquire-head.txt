@@ -1,0 +1,13 @@
+## host: MINGW64_NT-10.0-26100   lab home: /tmp/fm-lab.xmKcyq   (disposable, fm-lab-home.sh create)
+## $ fm-lock.sh status (before)
+lock: free
+## $ fm-lock.sh (acquire)
+lock acquired: harness pid win:58188
+exit=0 elapsed=170s
+## state/.lock line 1:
+win:58188
+## $ fm-lock.sh status (after)
+lock: held by live harness pid win:58188
+## state dir after acquire:
+.lock
+.lock-session

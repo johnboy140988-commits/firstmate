@@ -1,0 +1,17 @@
+lab home: /tmp/fm-lab.jYhUoY (disposable)
+$ fm-lock.sh status
+lock: free
+exit=0
+$ fm-lock.sh   (acquire)
+lock acquired: harness pid win:57480
+exit=0 elapsed=205s
+$ fm-lock.sh status
+lock: held by live harness pid win:57480
+exit=0
+$ ls -la state; cat state/.lock
+total 10
+drwxr-xr-x 1 ALVAREZMARSAL+MLannan 4096  0 Nov 12 17:51 .
+drwxr-xr-x 1 ALVAREZMARSAL+MLannan 4096  0 Nov 12 17:48 ..
+-rw-r--r-- 1 ALVAREZMARSAL+MLannan 4096 10 Nov 12 17:51 .lock
+-rw-r--r-- 1 ALVAREZMARSAL+MLannan 4096 37 Nov 12 17:51 .lock-session
+win:57480

@@ -1,0 +1,4 @@
+base commit bf0f3468 bin/ + HEAD regression test (old ln -s behaviour)
+$ bash tests/fm-lock-windows-owner-link.test.sh
+not ok - plain home: lock shell exited 1: create-failed
+exit=1

@@ -1,0 +1,9 @@
+## fm_harness_ancestry_pids on MINGW64_NT-10.0-26100, real process table
+## BASE bf0f3468
+walk exit=0 harness pids printed=[win:58188] elapsed=56s
+pids examined (fm_proc_info calls, in order): 20966 20952 20872 1 
+examinations: 4
+## HEAD 6e3513c0
+walk exit=0 harness pids printed=[win:58188] elapsed=55s
+pids examined (fm_proc_info calls, in order): 21388 20952 20872 1 
+examinations: 4

@@ -1,0 +1,10 @@
+## fm_harness_ancestry_pids with a simulated process table where pid 1 reports itself as parent
+## (this gate host's ps cannot read pid 1 at all, so the self-parent chain is supplied by a stubbed fm_proc_info)
+## BASE bf0f3468
+      1   examine pid <self> -> ppid 1
+     15   examine pid 1 -> ppid 1
+      1   walk exit=1 (1 = no harness found, expected for this table)
+## HEAD 6e3513c0
+      1   examine pid <self> -> ppid 1
+      1   examine pid 1 -> ppid 1
+      1   walk exit=1 (1 = no harness found, expected for this table)

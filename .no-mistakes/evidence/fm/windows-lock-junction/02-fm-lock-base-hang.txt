@@ -1,0 +1,9 @@
+## BASE commit bf0f3468 bin/fm-lock.sh, fresh disposable lab home /tmp/fm-lab.VgpzmK, host MINGW64_NT-10.0-26100
+## $ timeout 480 fm-lock.sh
+error: cannot record the session identity beside the lock; operate read-only until resolved
+exit=1 elapsed=398s   (124 = still spinning when killed)
+## state dir afterwards:
+ls: cannot access '/tmp/fm-lab.VgpzmK/state': No such file or directory
+## is the claim marker a link? 
+## .lock present?
+no .lock - never acquired

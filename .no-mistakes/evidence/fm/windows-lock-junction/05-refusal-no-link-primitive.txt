@@ -1,0 +1,6 @@
+lab home: /tmp/fm-lab.WS2hV8 (disposable); PATH is prefixed with a cmd.exe that always fails, so no junction can be published
+$ fm-lock.sh   (acquire)
+error: cannot publish a native Windows lock owner link; no fleet lock was acquired
+exit=1 elapsed=140s
+$ ls -A state
+(end of listing)

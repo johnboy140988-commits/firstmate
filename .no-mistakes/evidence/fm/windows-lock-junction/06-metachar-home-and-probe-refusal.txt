@@ -1,0 +1,18 @@
+## A. home reached through drive spelling with cmd metacharacters: FM_HOME='/c/Users/<user>/AppData/Local/Temp/fm-lab.POCVVl/r&d (x) home'
+## $ fm-lock.sh
+error: cannot write session lock; operate read-only until resolved
+exit=1 elapsed=105s
+## $ fm-lock.sh status
+lock: free
+## state dir:
+## stray files next to the home (nothing created by an interpreted '&'):
+r&d (x) home
+
+## B. host that cannot publish a junction (cmd.exe shadowed on PATH by a stub that exits 1), fresh lab home /tmp/fm-lab.lRcuZE
+## $ fm-lock.sh
+error: cannot publish a native Windows lock owner link; no fleet lock was acquired
+exit=1 elapsed=108s
+## $ fm-lock.sh status
+lock: free
+## state dir (expect empty: no .lock, no leaked .lock-links.* or owner dirs):
+(end)

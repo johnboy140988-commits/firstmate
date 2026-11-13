@@ -1,0 +1,26 @@
+lab home: /tmp/fm-lab.jYhUoY (disposable); nothing else running on the host; FM_SESSION_START_TIMEOUT=540
+$ FM_SESSION_START_TIMEOUT=540 fm-session-start.sh
+
+================================================================================
+SESSION START - /tmp/fm-lab.jYhUoY
+================================================================================
+
+LOCK
+--------------------------------------------------------------------------------
+lock acquired: harness pid win:57480
+
+HOME ROLE
+--------------------------------------------------------------------------------
+fm-role: user (default)
+
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  STARTUP TRUNCATED - SESSION START HIT ITS 540s RUNTIME BOUND
+●  It stopped during the "role" stage, so everything above is COMPLETE
+●  only up to that point.
+●  RECONCILE these stages before acting on anything they would have shown:
+●    role bootstrap wake-queue supervision-instructions read-once fleet-state network-checks context next-step
+●  Rerun bin/fm-session-start.sh now to finish taking the helm. If it truncates
+●  again, raise FM_SESSION_START_TIMEOUT and report the slow stage - a stage that
+●  cannot finish inside the bound is a fleet problem, not a reporting detail.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+exit=0 elapsed=554s
